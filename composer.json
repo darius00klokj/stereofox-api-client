@@ -1,0 +1,23 @@
+{
+    "name": "darius00klokj/stereofoxAPIClient",
+    "type": "library",
+    "description": "Stereofox API client",
+    "keywords": ["wordpress","caching"],
+    "homepage": "https://github.com/darius00klokj/stereofox-api-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Darius Karremans",
+            "email": "darius00klokj@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SFAPI\\": "src"
+        }
+    }
+}
