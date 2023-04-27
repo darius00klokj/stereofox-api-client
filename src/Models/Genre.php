@@ -3,7 +3,7 @@
 namespace SFAPI\Models;
 
 use App\Http\Controllers\GenresController;
-use SFAPI\ApiGenresGet;
+use SFAPI\Api\GenresGet;
 
 /**
  * Description of Genre

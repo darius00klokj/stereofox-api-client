@@ -2,7 +2,7 @@
 
 namespace SFAPI\Models;
 
-use SFAPI\ApiStreamsGet;
+use SFAPI\Api\StreamsGet;
 use SFAPI\Models\{
     Artist,
     Post

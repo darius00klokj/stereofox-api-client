@@ -2,7 +2,7 @@
 
 namespace SFAPI\Models;
 
-use SFAPI\ApiPostsGet;
+use SFAPI\Api\PostsGet;
 
 class Mixes extends PostType
 {

@@ -2,7 +2,7 @@
 
 namespace SFAPI\Models;
 
-use SFAPI\ApiPostsGet;
+use SFAPI\Api\PostsGet;
 use SFAPI\Models\Artist;
 use App\Http\Controllers\LabelController;
 

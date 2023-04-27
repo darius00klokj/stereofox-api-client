@@ -5,7 +5,7 @@
  */
 
 namespace SFAPI\Models;
-use SFAPI\ApiPostsGetRelated;
+use SFAPI\Api\PostsGetRelated;
 
 /**
  * Parent class 

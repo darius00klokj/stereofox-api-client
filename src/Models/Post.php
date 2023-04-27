@@ -2,9 +2,9 @@
 
 namespace SFAPI\Models;
 
-use SFAPI\ApiPostsGet;
+use SFAPI\Api\PostsGet;
 use SFAPI\Models\Genre;
-use SFAPI\ApiPostsGetRelated;
+use SFAPI\Api\PostsGetRelated;
 
 /**
  * We want to get all data from the API, a single post fetched as example:

@@ -2,7 +2,7 @@
 
 namespace SFAPI\Models;
 
-use SFAPI\ApiPageGet;
+use SFAPI\Api\PageGet;
 use SFAPI\Models\Author;
 
 class Page extends PostType
