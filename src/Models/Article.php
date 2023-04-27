@@ -7,6 +7,9 @@ use SFAPI\Models\Author;
 
 class Article extends PostType {
 
+    /**
+     * Traits
+     */
     use Traits\ArticleProps;
 
     public function __construct(mixed $jsonPost) {
