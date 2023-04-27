@@ -2,9 +2,10 @@
     "name": "darius00klokj/stereofoxAPIClient",
     "type": "library",
     "description": "Stereofox API client",
-    "keywords": ["wordpress","caching"],
+    "keywords": ["wordpress", "caching"],
     "homepage": "https://github.com/darius00klokj/stereofox-api-client",
     "license": "MIT",
+    "version": "2.0",
     "authors": [
         {
             "name": "Darius Karremans",
