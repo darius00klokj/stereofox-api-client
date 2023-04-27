@@ -1,5 +1,5 @@
 {
-    "name": "darius00klokj/stereofoxAPIClient",
+    "name": "darius00klokj/stereofox-api-client",
     "type": "library",
     "description": "Stereofox API client",
     "keywords": ["wordpress", "caching"],
