@@ -1,6 +1,6 @@
 <?php
 
-namespace SFAPI\Api\Api;
+namespace SFAPI\Api;
 
 class ContactForm extends Api {
     const ACTION = 'send_contact_form';

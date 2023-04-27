@@ -1,6 +1,6 @@
 <?php
 
-namespace SFAPI\Api\Api;
+namespace SFAPI\Api;
 
 class UserActivateAccount extends Api {
     const ACTION = 'user_activate_account';

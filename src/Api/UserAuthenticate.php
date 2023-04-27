@@ -1,6 +1,6 @@
 <?php
 
-namespace SFAPI\Api\Api;
+namespace SFAPI\Api;
 
 class UserAuthenticate extends Api {
     const ACTION = 'user_authenticate';

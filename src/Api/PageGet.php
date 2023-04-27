@@ -1,6 +1,6 @@
 <?php
 
-namespace SFAPI\Api\Api;
+namespace SFAPI\Api;
 
 use Illuminate\Support\Facades\Http;
 

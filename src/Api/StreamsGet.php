@@ -1,6 +1,6 @@
 <?php
 
-namespace SFAPI\Api\Api;
+namespace SFAPI\Api;
 
 /**
  * Streams are curated playlists. NOT user generated ones.

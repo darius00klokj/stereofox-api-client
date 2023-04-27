@@ -1,6 +1,6 @@
 <?php
 
-namespace SFAPI\Api\Api;
+namespace SFAPI\Api;
 
 /**
  * docs: https://stereofox.atlassian.net/wiki/spaces/STEREOFOX/pages/730988545/SFAPI+User+Password+Recovery+Email

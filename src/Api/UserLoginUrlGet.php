@@ -1,6 +1,6 @@
 <?php
 
-namespace SFAPI\Api\Api;
+namespace SFAPI\Api;
 
 /**
  * Based on the Type of login, fetch the login URL for each service.
