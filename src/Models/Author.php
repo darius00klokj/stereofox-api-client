@@ -6,7 +6,7 @@
 
 namespace SFAPI\Models;
 
-use SFAPI\ApiAuthorsGet;
+use SFAPI\Api\AuthorsGet;
 use App\Http\Controllers\AuthorController;
 
 /**
