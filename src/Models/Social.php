@@ -23,6 +23,7 @@ class Social {
     const TYPE_AMAZON          = 'amazon';
     const TYPE_ITUNES          = 'itunes';
     const TYPE_BANDCAMP        = 'bandcamp';
+    const TYPE_DISCORD         = 'discord';
 
     public function __construct(mixed $jsonPost) {
         if ($jsonPost) {
@@ -37,12 +38,10 @@ class Social {
      */
     public static function list_platforms() {
         return [
-            Social::TYPE_SPOTIFY => 'https://open.spotify.com/user/stereofox',
-            Social::TYPE_APPLE => 'https://music.apple.com/profile/stereofox',
-            Social::TYPE_INSTRAGRAM => 'https://www.instagram.com/wearestereofox/',
-            //Social::TYPE_FACEBOOK => 'https://www.facebook.com/wearestereofox',
-            Social::TYPE_TWITTER => 'https://twitter.com/wearestereofox',
-            //Social::TYPE_SOUNDCLOUD => 'https://soundcloud.com/wearestereofox/',
+            Social::TYPE_SPOTIFY => static::getPlatformUrl(Social::TYPE_SPOTIFY),
+            Social::TYPE_APPLE => static::getPlatformUrl(Social::TYPE_APPLE),
+            Social::TYPE_INSTRAGRAM => static::getPlatformUrl(Social::TYPE_INSTRAGRAM),
+            Social::TYPE_TWITTER => static::getPlatformUrl(Social::TYPE_TWITTER),
         ];
     }
 
@@ -64,6 +63,25 @@ class Social {
     }
 
     /**
+     * 
+     * @param mixed $social 
+     * @return string 
+     */
+    public static function getPlatformUrl($social){
+        $urls = [
+            Social::TYPE_SPOTIFY => 'https://open.spotify.com/user/stereofox',
+            Social::TYPE_APPLE => 'https://music.apple.com/profile/stereofox',
+            Social::TYPE_INSTRAGRAM => 'https://www.instagram.com/wearestereofox/',
+            Social::TYPE_FACEBOOK => 'https://www.facebook.com/wearestereofox',
+            Social::TYPE_TWITTER => 'https://twitter.com/wearestereofox',
+            Social::TYPE_SOUNDCLOUD => 'https://soundcloud.com/wearestereofox/',
+            Social::TYPE_DISCORD => 'https://discord.gg/nWd7VccZ'
+        ];
+
+        return $urls[$social];
+    }
+
+    /**
      *
      * @param type $type
      * @return string
@@ -75,7 +93,8 @@ class Social {
             static::TYPE_TWITTER => 'Twitter',
             static::TYPE_FACEBOOK => 'Facebook',
             static::TYPE_SOUNDCLOUD => 'Soundcloud',
-            static::TYPE_APPLE => 'Apple'
+            static::TYPE_APPLE => 'Apple',
+            static::TYPE_DISCORD => 'Discord'
         ];
 
         return $labels[$type];
