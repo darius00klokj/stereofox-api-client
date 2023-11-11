@@ -25,6 +25,10 @@ class GetUrlMetas extends Api
     {
         $this->setParam_uri($uri);
 
+        if(strpos($uri, ' ') !== false || strpos($uri, '"') !== false || strpos($uri, '//') !== false){
+            return null;
+        }
+
         $headJson = $this->request(
             [
                 'uri' => $this->getParam_uri()
