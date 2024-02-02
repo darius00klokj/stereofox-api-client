@@ -17,7 +17,7 @@ class UserLoginUrlGet extends Api {
      *
      * docs
      *
-     * @return array
+     * @return object
      */
     public function fetch(): object|null {
 
