@@ -25,6 +25,8 @@ class PostType {
     const TYPE_MIX          = 'mixes';
     const TYPE_LABEL        = 'label';
     const TYPE_ALBUM_REVIEW = 'album-reviews';
+    const TYPE_PODCASTS = 'podcasts';
+    const TYPE_RESOURCES = 'resources';
 
     /**
      * Every post has these properties.
@@ -436,24 +438,6 @@ class PostType {
         $this->author = $author;
     }
 
-    /**
-     * Get the value for sorting the artists.
-     *
-     * @return  int  sortBy value.
-     */
-    public function getSortBy(): int {
-        return $this->sortBy;
-    }
-
-    /**
-     * Set the sorting value.
-     *
-     * @param  int  $sortBy    sortby value.
-     */
-    public function setSortBy(array $sortBy): void {
-        $this->sortBy = $sortBy;
-    }
-    
     public function getPost_status() {
         return $this->post_status;
     }
@@ -473,4 +457,22 @@ class PostType {
         return false;
     }
 
+
+    /**
+     * Get sorts artists by popular, featured, fresh
+     */
+    public function getSortby()
+    {
+        return $this->sortby;
+    }
+
+    /**
+     * Set sorts artists by popular, featured, fresh
+     */
+    public function setSortby($sortby): self
+    {
+        $this->sortby = $sortby;
+
+        return $this;
+    }
 }
