@@ -25,7 +25,7 @@ class PostType {
     const TYPE_MIX          = 'mixes';
     const TYPE_LABEL        = 'label';
     const TYPE_ALBUM_REVIEW = 'album-reviews';
-    const TYPE_PODCASTS = 'podcasts';
+    const TYPE_PODCASTS = 'podcast';
     const TYPE_RESOURCES = 'resources';
 
     /**
