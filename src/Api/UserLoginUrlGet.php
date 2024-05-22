@@ -37,7 +37,7 @@ class UserLoginUrlGet extends Api {
         /**
          * Return the first instance
          */
-        return (object) $resp->urls;
+        return (object) $resp;
     }
 
     public function getRedirect_url() {
