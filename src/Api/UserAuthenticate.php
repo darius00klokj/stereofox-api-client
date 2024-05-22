@@ -8,6 +8,7 @@ class UserAuthenticate extends Api {
     private $param_type;
     private $param_code; //verifies the user account
     private $param_token; // To link a user with an account
+    private $param_state;
     private $redirect_url = '';
 
     /**
@@ -27,7 +28,8 @@ class UserAuthenticate extends Api {
             'type' => $this->getParam_type(),
             'redirect_url' => $this->getRedirect_url(),
             'code' => $this->getParam_code(),
-            'token' => $this->getParam_token()
+            'token' => $this->getParam_token(),
+            'state' => $this->getParamState()
         ];
 
         $userJson = $this->request(
@@ -107,4 +109,22 @@ class UserAuthenticate extends Api {
         $this->redirect_url = $redirect_url;
     }
 
+
+    /**
+     * Get the value of param_state
+     */
+    public function getParamState()
+    {
+        return $this->param_state;
+    }
+
+    /**
+     * Set the value of param_state
+     */
+    public function setParamState($param_state): self
+    {
+        $this->param_state = $param_state;
+
+        return $this;
+    }
 }
