@@ -40,6 +40,7 @@ class Genre
 
     const GENRE_ID_TRACKS     = 34;
     const GENRE_ID_HIPHOP     = 4751;
+    const GENRE_ID_CHILLHOP     = 5212;
     const GENRE_ID_ELECTRONIC = 2;
 
     /**
