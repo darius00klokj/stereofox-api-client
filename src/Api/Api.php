@@ -63,7 +63,12 @@ class Api {
         /**
          * Check the type of request.
          */
-        $params['params']['url'] = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        if(isset($_SERVER['HTTP_HOST'])){
+            $params['params']['url'] = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        }else{
+            $params['params']['url'] = 'CLI';
+        }
+        
         if ($method === self::METHOD_POST) {
             $response = $this->post($params);
         } else {
