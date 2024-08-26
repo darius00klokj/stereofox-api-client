@@ -131,7 +131,6 @@ class Post extends PostType {
         $jsonPost = $api->single($slug, PostType::TYPE_POST);
 
         if (!$jsonPost) {
-            abort(404);
             return null;
         }
 
@@ -202,7 +201,6 @@ class Post extends PostType {
         //new APIParams(array('postType' => PostType::TYPE_POST, 'max' => 4))
         $jsonPosts = $api->list();
         if (!$jsonPosts) {
-            abort(404);
             return null;
         }
 
