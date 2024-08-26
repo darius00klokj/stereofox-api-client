@@ -201,7 +201,7 @@ class Post extends PostType {
         //new APIParams(array('postType' => PostType::TYPE_POST, 'max' => 4))
         $jsonPosts = $api->list();
         if (!$jsonPosts) {
-            return null;
+            return [];
         }
 
         return Post::json2objects($jsonPosts);
