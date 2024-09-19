@@ -249,7 +249,8 @@ class Post extends PostType {
      * @return  Tracks[]
      */
     public function getTracks() {
-        return $this->tracks;
+        $trs = $this->tracks;
+        return !$trs ? [] : $trs; // make sure its always array
     }
 
     /**
@@ -267,7 +268,8 @@ class Post extends PostType {
      * @return  Genre[]
      */
     public function getGenres() {
-        return $this->genres;
+        $gens = $this->genres;
+        return !$gens ? [] : $gens; // make sure its always array
     }
 
     /**
@@ -285,7 +287,8 @@ class Post extends PostType {
      * @return  Artist[]
      */
     public function getArtists(): array {
-        return $this->artists;
+        $arts = $this->artists;
+        return !$arts ? [] : $arts; // make sure its always array
     }
 
     /**
@@ -302,7 +305,8 @@ class Post extends PostType {
      * @return PlaylistStream[]
      */
     public function getPlaylistStreams(): array {
-        return $this->playlistStreams;
+        $streams = $this->playlistStreams;
+        return !$streams ? [] : $streams; // make sure its always array
     }
 
     public function setPlaylistStreams(array $playlistStreams): void {
