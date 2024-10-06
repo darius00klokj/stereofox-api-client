@@ -24,6 +24,7 @@ class Social {
     const TYPE_ITUNES          = 'itunes';
     const TYPE_BANDCAMP        = 'bandcamp';
     const TYPE_DISCORD         = 'discord';
+    const TYPE_TIKTOK = 'tiktok';
 
     public function __construct(mixed $jsonPost) {
         if ($jsonPost) {
@@ -41,7 +42,7 @@ class Social {
             Social::TYPE_SPOTIFY => static::getPlatformUrl(Social::TYPE_SPOTIFY),
             Social::TYPE_APPLE => static::getPlatformUrl(Social::TYPE_APPLE),
             Social::TYPE_INSTRAGRAM => static::getPlatformUrl(Social::TYPE_INSTRAGRAM),
-            Social::TYPE_TWITTER => static::getPlatformUrl(Social::TYPE_TWITTER),
+            Social::TYPE_TIKTOK => static::getPlatformUrl(Social::TYPE_TIKTOK),
         ];
     }
 
@@ -75,7 +76,8 @@ class Social {
             Social::TYPE_FACEBOOK => 'https://www.facebook.com/wearestereofox',
             Social::TYPE_TWITTER => 'https://twitter.com/wearestereofox',
             Social::TYPE_SOUNDCLOUD => 'https://soundcloud.com/wearestereofox/',
-            Social::TYPE_DISCORD => 'https://discord.gg/nWd7VccZ'
+            Social::TYPE_DISCORD => 'https://discord.gg/nWd7VccZ',
+            Social::TYPE_TIKTOK => 'https://www.tiktok.com/@wearestereofox'
         ];
 
         return $urls[$social];
