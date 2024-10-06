@@ -67,7 +67,7 @@ class Author {
     /**
      * Returns the public URL for this author.
      * 
-     * @return type
+     * @return string
      */
     public function getURL() {
         return surl(sprintf('/%s/%s/', AuthorController::URI,
