@@ -15,6 +15,8 @@ use App\Http\Controllers\AuthorController;
  * @author darius
  */
 class Author {
+
+    public $ID;
     public $name;
     public $slug;
     public $avatar;
@@ -245,4 +247,22 @@ class Author {
         $this->head = $head;
     }
 
+
+    /**
+     * Get the value of ID
+     */
+    public function getID()
+    {
+        return $this->ID;
+    }
+
+    /**
+     * Set the value of ID
+     */
+    public function setID($ID): self
+    {
+        $this->ID = $ID;
+
+        return $this;
+    }
 }
