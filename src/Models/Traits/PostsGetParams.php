@@ -21,6 +21,7 @@ trait PostsGetParams {
     private $param_genre;
     private $param_sortBy;
     private $param_withCount;
+    private $param_author;
 
     /**
      * We will only accept a single string
@@ -288,6 +289,21 @@ trait PostsGetParams {
     }
 
 
+    /**
+     * Get the value of param_author
+     */
+    public function getParamAuthor()
+    {
+        return $this->param_author;
+    }
 
+    /**
+     * Set the value of param_author
+     */
+    public function setParamAuthor($param_author): self
+    {
+        $this->param_author = $param_author;
 
+        return $this;
+    }
 }
