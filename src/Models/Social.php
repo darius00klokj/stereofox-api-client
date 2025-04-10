@@ -71,7 +71,7 @@ class Social {
     public static function getPlatformUrl($social){
         $urls = [
             Social::TYPE_SPOTIFY => 'https://open.spotify.com/user/stereofox',
-            Social::TYPE_APPLE => 'https://music.apple.com/profile/stereofox',
+            Social::TYPE_APPLE => 'https://music.apple.com/us/curator/stereofox/1803199457',
             Social::TYPE_INSTRAGRAM => 'https://www.instagram.com/wearestereofox/',
             Social::TYPE_FACEBOOK => 'https://www.facebook.com/wearestereofox',
             Social::TYPE_TWITTER => 'https://twitter.com/wearestereofox',
