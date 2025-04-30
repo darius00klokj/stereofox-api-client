@@ -180,7 +180,7 @@ class Artist extends PostType {
      * @return  Track[]    An array of Track objects.
      */
     public function getTracks(): array {
-        return $this->tracks;
+        return $this->tracks ? $this->tracks : [];
     }
 
     /**
