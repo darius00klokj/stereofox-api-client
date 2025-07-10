@@ -46,7 +46,7 @@ class Genre
     /**
      * Returns the url of the genre.
      * 
-     * @return  url    url to the genre.
+     * @return string url to the genre.
      */
     public function getURL(): string
     {
