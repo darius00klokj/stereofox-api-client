@@ -144,12 +144,13 @@ class Post extends PostType {
      * @param   array   $timeframe    The time frame
      * @return  array            
      */
-    public static function fetchByGenre($key, $times = [], $page = 1): ?array {
+    public static function fetchByGenre($key, $times = [], $page = 1, $with_count = false): ?array {
         $api = new PostsGet();
 
         $api->setParam_type(PostType::TYPE_POST);
         $api->setParam_genre($key);
         $api->setParam_page($page);
+        $api->setParam_withCount($with_count ? 1 : 0);
 
         if ($times) {
             $api->tracksWithinTimePeriod($times[0], $times[1]);
