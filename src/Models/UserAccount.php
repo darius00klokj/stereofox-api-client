@@ -15,6 +15,7 @@ class UserAccount {
     public $email;
     public $name;
     public $image;
+    public $token;
 
     public function __construct(mixed $accountData) {
         if ($accountData) {
@@ -91,5 +92,21 @@ class UserAccount {
         $this->image = $image;
     }
 
+    /**
+     * Get the value of token
+     */
+    public function getToken()
+    {
+        return $this->token;
+    }
 
+    /**
+     * Set the value of token
+     */
+    public function setToken($token): self
+    {
+        $this->token = $token;
+
+        return $this;
+    }
 }
