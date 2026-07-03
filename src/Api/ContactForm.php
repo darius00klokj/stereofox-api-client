@@ -49,24 +49,6 @@ class ContactForm extends Api {
      */
 
     /**
-     * Get the value of param_type
-     * 
-     * @return  string  post type.
-     */
-    public function getParam_type(): string {
-        return $this->param_type;
-    }
-
-    /**
-     * Set the value of param_type
-     *
-     * @param  string  Post type.
-     */
-    public function setParam_type(string $param_type): void {
-        $this->param_type = $param_type;
-    }
-
-    /**
      * Get the value of param_name
      *
      * @return  string  user name
